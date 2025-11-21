@@ -2,11 +2,11 @@ import express from "express";
 
 const router = express.Router();
 
-router.post("/login", (req, res) => {
+router.get("/login", async(req, res) => {
     res.send("login");
 });
 
-router.post("/register", (req, res) => {
+router.get("/register", async(req, res) => {
     res.send("register");
 });
 
