@@ -4,6 +4,8 @@ import "dotenv/config";
 const app = express();
 const PORT = process.env.PORT;
 
+app.use("/api/auth",authRoutes)
+
 app.listen(PORT, () => {
     console.log("Server running on port " + PORT);
 });
